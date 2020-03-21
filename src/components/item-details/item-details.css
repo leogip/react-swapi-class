@@ -1,0 +1,41 @@
+.details-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.details-card img {
+  border-radius: 5px;
+  max-width: 150px;
+}
+
+.details-body {
+  margin-left: 20px;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+}
+
+.details-item {
+  margin-bottom: 15px;
+}
+.details-item::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .details-card {
+    flex-direction: column;
+  }
+
+  .details-body {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}

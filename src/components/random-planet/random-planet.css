@@ -1,0 +1,30 @@
+.random {
+  display: flex;
+}
+
+.random img {
+  border-radius: 5px;
+  max-width: 200px;
+}
+
+.random-body {
+  margin-left: 20px;
+}
+
+.random-list {
+  list-style: none;
+  padding: 0;
+}
+
+.random-item {
+  margin-bottom: 20px;
+}
+
+.random-item::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  margin-top: 5px;
+}
